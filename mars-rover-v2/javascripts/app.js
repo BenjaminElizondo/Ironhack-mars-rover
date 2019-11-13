@@ -83,13 +83,13 @@ function listOfCommands(commands) {
   for (let i = 0; i < commands.length; i++){
     switch (commands[i]) {
       case "l":
-      turnLeft(rover.direction);
+      turnLeft(rover);
       break;
       case "r":
-      turnRight(rover.direction);
+      turnRight(rover);
       break;
       case "f":
-      moveForward(rover.direction);
+      moveForward(rover);
       break;
       default:
       console.log("Not a valid command, please enter one of the following: l, r, f");
